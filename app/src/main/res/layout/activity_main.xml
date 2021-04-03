@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="숫자 up/down 게임"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:background="#000000"
+        android:id="@+id/tv1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:hint="범위 : 1 ~ 50"
+        android:textColor="#ffffff"
+        android:textSize="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/tv2"
+        android:gravity="left"
+        android:layout_gravity="bottom"
+        android:hint="기록"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scrollbars="vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <EditText
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/et11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="숫자 입력 칸" />
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_weight="2"
+                android:textSize="20dp"
+                android:text="숫자 생성"
+                android:id="@+id/bt2"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+            <Button
+                android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="숫자 입력"
+            android:id="@+id/bt1"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:text="숫자 생성을 먼저 누르고 시작해 주세요!"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
